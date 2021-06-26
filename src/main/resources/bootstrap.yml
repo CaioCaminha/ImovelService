@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: 'homemanager'
+  profiles:
+    active: default
+  cloud:
+    config:
+      uri: https://configserver-homemanager.herokuapp.com
+      
+#Este arquivo é carregado antes do application, portanto terá disponível as configurações quando o hibernate
+#procurar pelas configurações acima, pois terá dado tempo do spring buscar no spring config

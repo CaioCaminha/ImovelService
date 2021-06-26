@@ -1,0 +1,10 @@
+server:
+  port: 8085
+   
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+     defaultZone: https://eureka-server-homemanager.herokuapp.com/eureka
+     
